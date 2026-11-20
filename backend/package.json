@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart": "npm --prefix verification-gate run build",
+    "predev": "npm --prefix verification-gate run build",
     "start": "node server.js",
     "dev": "node server.js",
+    "build:gate": "npm --prefix verification-gate run build",
     "migrate:gcp": "node scripts/migrate-to-gcp.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
