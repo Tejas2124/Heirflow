@@ -6,11 +6,12 @@
 
 set -e
 
-PROJECT_ID="${1:-$(gcloud config get-value project 2>/dev/null)}"
-REGION="${2:-us-central1}"
+PROJECT_ID="${1:-heirflow-515305}"
+REGION="${2:-asia-south1}"
 SERVICE_NAME="${3:-heirflow}"
-GCS_BUCKET="${4:-}"
+GCS_BUCKET="${4:-heirflow-evidence-vault}"
 GEMINI_KEY="${5:-$GEMINI_API_KEY}"
+FIRESTORE_DB="${6:-hierflow-db}"
 
 echo "========================================="
 echo " 🏛️  HeirFlow — Google Cloud Run Deploy"
@@ -24,9 +25,9 @@ echo "Deploying to Project: $PROJECT_ID in Region: $REGION"
 gcloud config set project "$PROJECT_ID"
 
 echo "[1/4] Enabling required Google Cloud APIs..."
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com containerregistry.googleapis.com storage.googleapis.com
+gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com storage.googleapis.com firestore.googleapis.com
 
-ENV_VARS="NODE_ENV=production,PORT=8080,GCP_PROJECT_ID=$PROJECT_ID"
+ENV_VARS="NODE_ENV=production,GCP_PROJECT_ID=$PROJECT_ID,FIRESTORE_DATABASE_ID=$FIRESTORE_DB"
 
 if [ -n "$GEMINI_KEY" ]; then
     ENV_VARS="$ENV_VARS,GEMINI_API_KEY=$GEMINI_KEY"

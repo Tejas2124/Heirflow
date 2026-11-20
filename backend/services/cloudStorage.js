@@ -14,9 +14,6 @@ try {
   if (BUCKET_NAME) {
     const options = {};
     if (PROJECT_ID) options.projectId = PROJECT_ID;
-    if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-      options.keyFilename = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-    }
     storageClient = new Storage(options);
     bucket = storageClient.bucket(BUCKET_NAME);
     console.log(`☁️ Google Cloud Storage initialized: gs://${BUCKET_NAME}`);

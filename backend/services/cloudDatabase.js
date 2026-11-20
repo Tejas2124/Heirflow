@@ -4,6 +4,7 @@ const path = require('path');
 const { Firestore } = require('@google-cloud/firestore');
 
 const PROJECT_ID = process.env.GCP_PROJECT_ID;
+const DATABASE_ID = process.env.FIRESTORE_DATABASE_ID || '(default)';
 const USE_LOCAL_ONLY = process.env.USE_LOCAL_ONLY === 'true';
 
 /**
@@ -46,10 +47,7 @@ let cloudReady = false;
 function getFirestoreClient() {
   if (USE_LOCAL_ONLY || !PROJECT_ID || !hasGcpCredentials()) return null;
   if (!firestore) {
-    const options = { projectId: PROJECT_ID, preferRest: true };
-    if (process.env.GOOGLE_APPLICATION_CREDENTIALS) {
-      options.keyFilename = process.env.GOOGLE_APPLICATION_CREDENTIALS;
-    }
+    const options = { projectId: PROJECT_ID, databaseId: DATABASE_ID, preferRest: true };
     firestore = new Firestore(options);
   }
   return firestore;

@@ -4,11 +4,12 @@
 # ==========================================
 
 param (
-    [string]$ProjectId = "",
-    [string]$Region = "us-central1",
+    [string]$ProjectId = "heirflow-515305",
+    [string]$Region = "asia-south1",
     [string]$ServiceName = "heirflow",
     [string]$GeminiApiKey = "",
-    [string]$GcsBucket = ""
+    [string]$GcsBucket = "heirflow-evidence-vault",
+    [string]$FirestoreDb = "hierflow-db"
 )
 
 Write-Host "=========================================" -ForegroundColor Cyan
@@ -42,16 +43,16 @@ gcloud config set project $ProjectId
 
 # 3. Enable necessary Google Cloud APIs
 Write-Host "`n[1/4] Enabling required Google Cloud APIs..." -ForegroundColor Yellow
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com containerregistry.googleapis.com storage.googleapis.com
+gcloud services enable run.googleapis.com cloudbuild.googleapis.com artifactregistry.googleapis.com storage.googleapis.com firestore.googleapis.com
 
 # 4. Optional: Create GCS Bucket if specified
 if (-not [string]::IsNullOrWhiteSpace($GcsBucket)) {
     Write-Host "`n[2/4] Ensuring GCS bucket exists: gs://$GcsBucket..." -ForegroundColor Yellow
-    gsutil mb -p $ProjectId -c STANDARD -l $Region "gs://$GcsBucket" 2>$null
+    gcloud storage buckets create "gs://$GcsBucket" --location=$Region --uniform-bucket-level-access --public-access-prevention 2>$null
 }
 
 # 5. Build environment variables string
-$envVars = "NODE_ENV=production,PORT=8080,GCP_PROJECT_ID=$ProjectId"
+$envVars = "NODE_ENV=production,GCP_PROJECT_ID=$ProjectId,FIRESTORE_DATABASE_ID=$FirestoreDb"
 if (-not [string]::IsNullOrWhiteSpace($GeminiApiKey)) {
     $envVars += ",GEMINI_API_KEY=$GeminiApiKey"
 }
@@ -81,4 +82,3 @@ if ($LASTEXITCODE -eq 0) {
 } else {
     Write-Host "`nDeployment encountered an error. Check the logs above." -ForegroundColor Red
 }
-

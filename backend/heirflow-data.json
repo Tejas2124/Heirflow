@@ -1,15 +1,6 @@
 {
   "users": [
     {
-      "id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "name": "John Doe",
-      "email": "john@demo.com",
-      "password_hash": "$2b$10$ep13ZqeQXjLdhh0lsrCCK.ts039Pmu8KkwcTcooDseaM4z5BgwH8S",
-      "phone": "+1-555-0101",
-      "kyc_status": "verified",
-      "created_at": "2026-11-20T08:14:58.659Z"
-    },
-    {
       "id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
       "name": "Jane Smith",
       "email": "jane@demo.com",
@@ -17,6 +8,15 @@
       "phone": "+1-555-0202",
       "kyc_status": "pending",
       "created_at": "2026-11-20T08:14:58.661Z"
+    },
+    {
+      "id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "name": "John Doe",
+      "email": "john@demo.com",
+      "password_hash": "$2b$10$ep13ZqeQXjLdhh0lsrCCK.ts039Pmu8KkwcTcooDseaM4z5BgwH8S",
+      "phone": "+1-555-0101",
+      "kyc_status": "verified",
+      "created_at": "2026-11-20T08:14:58.659Z"
     },
     {
       "id": "60b70590-df73-430b-95bb-46d54e1d69f8",
@@ -30,54 +30,24 @@
   ],
   "assets": [
     {
-      "id": "e1dfabf5-6ad0-4e5e-9498-10e05a8ef1d4",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "id": "1d557584-39ed-4b84-949c-f8bae3ee8c79",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
       "type": "bank",
-      "name": "Chase Checking Account",
-      "details": "{\"bank\":\"Chase Bank\",\"account_number\":\"****1234\",\"routing\":\"021000021\"}",
-      "instructions": "Transfer to nominee upon verified claim. Contact Chase estate services at 1-800-935-9935.",
-      "nominee_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "created_at": "2026-11-20T08:14:58.661Z"
-    },
-    {
-      "id": "9c265091-5444-4a8c-9cb4-101f9fa85b29",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "type": "crypto",
-      "name": "Bitcoin Wallet",
-      "details": "{\"wallet_address\":\"1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf\",\"exchange\":\"Coinbase\"}",
-      "instructions": "Recovery phrase stored in LastPass vault. Nominee should contact Coinbase support with death certificate.",
-      "nominee_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "created_at": "2026-11-20T08:14:58.661Z"
-    },
-    {
-      "id": "f028f333-911f-4e34-ad05-3887046306f3",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "type": "file",
-      "name": "Google Photos Primary Library & Cloud Archive",
-      "details": "{\"account\":\"john@demo.com\",\"service\":\"Google Photos\",\"highResCount\":14250,\"sharedAlbums\":[\"Family Archive 2018-2026\",\"Vacations & Celebrations\",\"Documents & Receipts\"],\"googleOneStorageTier\":\"100 GB Plan\"}",
-      "instructions": "Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
+      "name": "ICICI Direct Trading & Demat Account",
+      "details": "{\"service\":\"ICICI Direct\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"accountType\":\"Demat & 3-in-1 Investment Account\",\"associatedPanNotice\":\"PAN linked via e-statements received on this Gmail\"}",
+      "instructions": "Submit transmission request form (Form T2) with death certificate to ICICI Securities registrar.",
       "nominee_id": null,
-      "created_at": "2026-11-20T08:16:29.037Z"
+      "created_at": "2026-11-20T09:17:03.571Z"
     },
     {
-      "id": "5ec2e75e-9129-4f3b-b908-2fbf40ae14b0",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "type": "bank",
-      "name": "Google Pay (GPay UPI)",
-      "details": "{\"upiId\":\"john@okhdfcbank\",\"secondaryUpiId\":\"john@okaxis\",\"linkedBank\":\"HDFC Bank Ltd\",\"accountType\":\"Savings Account\",\"registeredEmail\":\"john@demo.com\",\"verificationSource\":\"Google Pay Registered Profile\"}",
-      "instructions": "Contact HDFC Bank estate nodal officer with death certificate and probate/succession certificate to claim balance.",
-      "nominee_id": null,
-      "created_at": "2026-11-20T08:16:29.037Z"
-    },
-    {
-      "id": "fb9bde51-f979-4f97-a922-9ed829b36c5c",
+      "id": "3fe2cb80-6a7d-4e7e-ba1f-3ef60d9ad9ac",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
       "type": "file",
-      "name": "Google Photos Primary Library & Cloud Archive",
-      "details": "{\"account\":\"2x3osjs@gmail.com\",\"service\":\"Google Photos\",\"highResCount\":14250,\"sharedAlbums\":[\"Family Archive 2018-2026\",\"Vacations & Celebrations\",\"Documents & Receipts\"],\"googleOneStorageTier\":\"100 GB Plan\"}",
-      "instructions": "Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
+      "name": "DigiLocker National Identity & Asset Vault",
+      "details": "{\"authMethod\":\"Google Sign-In + Aadhaar OTP\",\"storedDocuments\":[\"Aadhaar Card\",\"PAN Card\",\"Vehicle RC\",\"Property Tax Records\",\"Class 10/12 Marksheets\"]}",
+      "instructions": "Crucial repository for official identity and property documents required during probate.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.569Z"
+      "created_at": "2026-11-20T09:17:03.574Z"
     },
     {
       "id": "5016d033-2297-4e7d-9e36-c56ec5e522e1",
@@ -90,34 +60,24 @@
       "created_at": "2026-11-20T09:17:03.570Z"
     },
     {
-      "id": "7173dfcf-dc9b-44a1-95bd-fc9cabb2be02",
+      "id": "5672cdf1-e2f5-4086-a3fc-960ccb88014b",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "type": "subscription",
+      "name": "Google One 100GB Cloud Subscription & Family Share",
+      "details": "{\"plan\":\"100 GB Cloud Storage Plan\",\"familySharing\":\"Enabled (2 family members enrolled)\",\"billing\":\"Auto-renew via Google Play\"}",
+      "instructions": "Ensure inactive account manager (Google Inactive Account Manager) triggers data download to nominee before billing stops.",
+      "nominee_id": null,
+      "created_at": "2026-11-20T09:17:03.575Z"
+    },
+    {
+      "id": "5ec2e75e-9129-4f3b-b908-2fbf40ae14b0",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
       "type": "bank",
       "name": "Google Pay (GPay UPI)",
-      "details": "{\"upiId\":\"2x3osjs@okhdfcbank\",\"secondaryUpiId\":\"2x3osjs@okaxis\",\"linkedBank\":\"HDFC Bank Ltd\",\"accountType\":\"Savings Account\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"verificationSource\":\"Google Pay Registered Profile\"}",
+      "details": "{\"upiId\":\"john@okhdfcbank\",\"secondaryUpiId\":\"john@okaxis\",\"linkedBank\":\"HDFC Bank Ltd\",\"accountType\":\"Savings Account\",\"registeredEmail\":\"john@demo.com\",\"verificationSource\":\"Google Pay Registered Profile\"}",
       "instructions": "Contact HDFC Bank estate nodal officer with death certificate and probate/succession certificate to claim balance.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.570Z"
-    },
-    {
-      "id": "f41d690f-f9e3-4f17-ad80-c716e5922d79",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "bank",
-      "name": "PhonePe UPI & Wallet",
-      "details": "{\"upiId\":\"2x3osjs@ybl\",\"linkedBank\":\"State Bank of India (SBI)\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"walletBalanceDetected\":true}",
-      "instructions": "File nominee claim on PhonePe support portal and notify SBI branch manager.",
-      "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.571Z"
-    },
-    {
-      "id": "1d557584-39ed-4b84-949c-f8bae3ee8c79",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "bank",
-      "name": "ICICI Direct Trading & Demat Account",
-      "details": "{\"service\":\"ICICI Direct\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"accountType\":\"Demat & 3-in-1 Investment Account\",\"associatedPanNotice\":\"PAN linked via e-statements received on this Gmail\"}",
-      "instructions": "Submit transmission request form (Form T2) with death certificate to ICICI Securities registrar.",
-      "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.571Z"
+      "created_at": "2026-11-20T08:16:29.037Z"
     },
     {
       "id": "68edcc7a-f10a-4d30-b671-2ab11984e3f4",
@@ -130,24 +90,34 @@
       "created_at": "2026-11-20T09:17:03.572Z"
     },
     {
-      "id": "c9e655e6-035b-4b12-924a-e273ce56d0c9",
+      "id": "7173dfcf-dc9b-44a1-95bd-fc9cabb2be02",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "crypto",
-      "name": "CoinDCX Indian Crypto Exchange Account",
-      "details": "{\"loginEmail\":\"2x3osjs@gmail.com\",\"kycStatus\":\"Verified (Aadhaar & PAN linked)\",\"registeredPhoneNotice\":\"SMS OTP required\"}",
-      "instructions": "Contact CoinDCX compliance officer for nominee transmission process.",
+      "type": "bank",
+      "name": "Google Pay (GPay UPI)",
+      "details": "{\"upiId\":\"2x3osjs@okhdfcbank\",\"secondaryUpiId\":\"2x3osjs@okaxis\",\"linkedBank\":\"HDFC Bank Ltd\",\"accountType\":\"Savings Account\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"verificationSource\":\"Google Pay Registered Profile\"}",
+      "instructions": "Contact HDFC Bank estate nodal officer with death certificate and probate/succession certificate to claim balance.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.572Z"
+      "created_at": "2026-11-20T09:17:03.570Z"
     },
     {
-      "id": "bbea62b2-2da0-4ab4-97b2-a95b02ef793b",
+      "id": "78946c3b-707c-453a-acec-9760cffa8692",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "crypto",
-      "name": "Web3 Ethereum / Polygon Self-Custody Wallet",
-      "details": "{\"backupType\":\"Encrypted Vault Backup Reference found in Drive/Gmail notes\",\"network\":\"Ethereum Mainnet & Polygon\",\"recoveryHint\":\"Recovery phrase split across HeirFlow Shamir secret shares\"}",
-      "instructions": "Assemble Shamir key shares from nominees to reconstruct master seed phrase.",
+      "type": "subscription",
+      "name": "Zerodha Kite (Stock & MF Portfolio)",
+      "details": "{\"authMethod\":\"Google Sign-In with 2x3osjs@gmail.com\",\"serviceType\":\"Equity & Mutual Fund Investments\"}",
+      "instructions": "Transfer shares via CDSL e-Voting / NSDL physical transmission form to nominee.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.573Z"
+      "created_at": "2026-11-20T09:17:03.574Z"
+    },
+    {
+      "id": "9c265091-5444-4a8c-9cb4-101f9fa85b29",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "type": "crypto",
+      "name": "Bitcoin Wallet",
+      "details": "{\"wallet_address\":\"1A1zP1eP5QGefi2DMPTfTL5SLmv7Divf\",\"exchange\":\"Coinbase\"}",
+      "instructions": "Recovery phrase stored in LastPass vault. Nominee should contact Coinbase support with death certificate.",
+      "nominee_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "created_at": "2026-11-20T08:14:58.661Z"
     },
     {
       "id": "9dc5da64-a2ed-47c9-9384-1bb441d4795e",
@@ -170,48 +140,67 @@
       "created_at": "2026-11-20T09:17:03.574Z"
     },
     {
-      "id": "78946c3b-707c-453a-acec-9760cffa8692",
+      "id": "bbea62b2-2da0-4ab4-97b2-a95b02ef793b",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "subscription",
-      "name": "Zerodha Kite (Stock & MF Portfolio)",
-      "details": "{\"authMethod\":\"Google Sign-In with 2x3osjs@gmail.com\",\"serviceType\":\"Equity & Mutual Fund Investments\"}",
-      "instructions": "Transfer shares via CDSL e-Voting / NSDL physical transmission form to nominee.",
+      "type": "crypto",
+      "name": "Web3 Ethereum / Polygon Self-Custody Wallet",
+      "details": "{\"backupType\":\"Encrypted Vault Backup Reference found in Drive/Gmail notes\",\"network\":\"Ethereum Mainnet & Polygon\",\"recoveryHint\":\"Recovery phrase split across HeirFlow Shamir secret shares\"}",
+      "instructions": "Assemble Shamir key shares from nominees to reconstruct master seed phrase.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.574Z"
+      "created_at": "2026-11-20T09:17:03.573Z"
     },
     {
-      "id": "3fe2cb80-6a7d-4e7e-ba1f-3ef60d9ad9ac",
+      "id": "c9e655e6-035b-4b12-924a-e273ce56d0c9",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "type": "crypto",
+      "name": "CoinDCX Indian Crypto Exchange Account",
+      "details": "{\"loginEmail\":\"2x3osjs@gmail.com\",\"kycStatus\":\"Verified (Aadhaar & PAN linked)\",\"registeredPhoneNotice\":\"SMS OTP required\"}",
+      "instructions": "Contact CoinDCX compliance officer for nominee transmission process.",
+      "nominee_id": null,
+      "created_at": "2026-11-20T09:17:03.572Z"
+    },
+    {
+      "id": "e1dfabf5-6ad0-4e5e-9498-10e05a8ef1d4",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "type": "bank",
+      "name": "Chase Checking Account",
+      "details": "{\"bank\":\"Chase Bank\",\"account_number\":\"****1234\",\"routing\":\"021000021\"}",
+      "instructions": "Transfer to nominee upon verified claim. Contact Chase estate services at 1-800-935-9935.",
+      "nominee_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "created_at": "2026-11-20T08:14:58.661Z"
+    },
+    {
+      "id": "f028f333-911f-4e34-ad05-3887046306f3",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "type": "file",
+      "name": "Google Photos Primary Library & Cloud Archive",
+      "details": "{\"account\":\"john@demo.com\",\"service\":\"Google Photos\",\"highResCount\":14250,\"sharedAlbums\":[\"Family Archive 2018-2026\",\"Vacations & Celebrations\",\"Documents & Receipts\"],\"googleOneStorageTier\":\"100 GB Plan\"}",
+      "instructions": "Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
+      "nominee_id": null,
+      "created_at": "2026-11-20T08:16:29.037Z"
+    },
+    {
+      "id": "f41d690f-f9e3-4f17-ad80-c716e5922d79",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "type": "bank",
+      "name": "PhonePe UPI & Wallet",
+      "details": "{\"upiId\":\"2x3osjs@ybl\",\"linkedBank\":\"State Bank of India (SBI)\",\"registeredEmail\":\"2x3osjs@gmail.com\",\"walletBalanceDetected\":true}",
+      "instructions": "File nominee claim on PhonePe support portal and notify SBI branch manager.",
+      "nominee_id": null,
+      "created_at": "2026-11-20T09:17:03.571Z"
+    },
+    {
+      "id": "fb9bde51-f979-4f97-a922-9ed829b36c5c",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
       "type": "file",
-      "name": "DigiLocker National Identity & Asset Vault",
-      "details": "{\"authMethod\":\"Google Sign-In + Aadhaar OTP\",\"storedDocuments\":[\"Aadhaar Card\",\"PAN Card\",\"Vehicle RC\",\"Property Tax Records\",\"Class 10/12 Marksheets\"]}",
-      "instructions": "Crucial repository for official identity and property documents required during probate.",
+      "name": "Google Photos Primary Library & Cloud Archive",
+      "details": "{\"account\":\"2x3osjs@gmail.com\",\"service\":\"Google Photos\",\"highResCount\":14250,\"sharedAlbums\":[\"Family Archive 2018-2026\",\"Vacations & Celebrations\",\"Documents & Receipts\"],\"googleOneStorageTier\":\"100 GB Plan\"}",
+      "instructions": "Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
       "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.574Z"
-    },
-    {
-      "id": "5672cdf1-e2f5-4086-a3fc-960ccb88014b",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "type": "subscription",
-      "name": "Google One 100GB Cloud Subscription & Family Share",
-      "details": "{\"plan\":\"100 GB Cloud Storage Plan\",\"familySharing\":\"Enabled (2 family members enrolled)\",\"billing\":\"Auto-renew via Google Play\"}",
-      "instructions": "Ensure inactive account manager (Google Inactive Account Manager) triggers data download to nominee before billing stops.",
-      "nominee_id": null,
-      "created_at": "2026-11-20T09:17:03.575Z"
+      "created_at": "2026-11-20T09:17:03.569Z"
     }
   ],
   "nominees": [
-    {
-      "id": "6b6f317e-9630-4e7c-a7a4-ae2a532462fa",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "name": "Jane Smith",
-      "email": "jane@demo.com",
-      "phone": "+1-555-0202",
-      "relationship": "spouse",
-      "key_share": "HEIRFLOW-SHARE-73AA27D7F2B241189899BD55",
-      "permissions": "{\"can_view_assets\":true,\"can_initiate_claims\":true,\"can_access_files\":true}",
-      "created_at": "2026-11-20T08:14:58.661Z"
-    },
     {
       "id": "583a9afe-8d58-48aa-ab36-fe6dd43e7f99",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
@@ -222,75 +211,70 @@
       "key_share": "HEIRFLOW-SHARE-93721B0A-09104B1D-A0000505",
       "permissions": "{\"view_assets\":true,\"claim_assets\":true}",
       "created_at": "2026-11-20T09:21:13.432Z"
+    },
+    {
+      "id": "6b6f317e-9630-4e7c-a7a4-ae2a532462fa",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "name": "Jane Smith",
+      "email": "jane@demo.com",
+      "phone": "+1-555-0202",
+      "relationship": "spouse",
+      "key_share": "HEIRFLOW-SHARE-73AA27D7F2B241189899BD55",
+      "permissions": "{\"can_view_assets\":true,\"can_initiate_claims\":true,\"can_access_files\":true}",
+      "created_at": "2026-11-20T08:14:58.661Z"
     }
   ],
   "claims": [],
   "claim_actions": [],
   "gate_claims": [
     {
-      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
-      "deceased_user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "claim_id": "fbeb5da9-c137-442c-814b-101634dd1db3",
       "claimant_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "status": "EXECUTED",
+      "deceased_user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "initiated_at": "2026-11-20T14:46:37.393Z",
       "evidence_path": null,
-      "state_json": "{\"claimId\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"deceasedUserId\":\"27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988\",\"claimantId\":\"09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9\",\"status\":\"EXECUTED\",\"quorumConfig\":{\"requiredQuorum\":1,\"totalNominees\":1,\"nomineeIds\":[\"jane@demo.com\"]},\"submittedShares\":[{\"nomineeId\":\"jane@demo.com\",\"shareHash\":\"a6436e9cda8dd440fc4c5587c8b22e82d6ef3a1e94c2a3c7d9e523fe3c01f15b\",\"submittedAt\":\"2026-11-20T13:27:27.399Z\",\"maskedIdentifier\":\"j***@demo.com\"}],\"certificateMetadata\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"stateOrMunicipality\":\"Gujarat e-Olakh\",\"verificationUrl\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\",\"isGovDomainValid\":true,\"rawQrPayload\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\"},\"gracePeriodSeconds\":10,\"initiatedAt\":\"2026-11-20T13:27:27.394Z\",\"updatedAt\":\"2026-11-20T13:27:39.396Z\",\"registryResult\":{\"status\":\"VERIFIED\",\"matchedRecord\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"status\":\"REGISTERED\",\"issuingAuthority\":\"Ahmedabad Municipal Corporation / Gujarat e-Olakh\",\"registrationDate\":\"2024-11-04\"},\"mismatches\":[],\"verifiedAt\":\"2026-11-20T13:27:27.401Z\",\"provider\":\"MockRegistryVerifier\",\"details\":\"Successfully cross-verified against Ahmedabad Municipal Corporation / Gujarat e-Olakh\"},\"graceEndsAt\":\"2026-11-20T13:27:37.402Z\",\"executedAt\":\"2026-11-20T13:27:39.396Z\"}",
-      "grace_ends_at": "2026-11-20T13:27:37.402Z",
-      "initiated_at": "2026-11-20T13:27:27.394Z",
-      "updated_at": "2026-11-20T13:27:39.396Z"
+      "grace_ends_at": null,
+      "updated_at": "2026-11-20T14:46:47.672Z",
+      "state_json": "{\"claimId\":\"fbeb5da9-c137-442c-814b-101634dd1db3\",\"deceasedUserId\":\"27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988\",\"claimantId\":\"09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9\",\"status\":\"DISPUTED\",\"quorumConfig\":{\"requiredQuorum\":1,\"totalNominees\":1,\"nomineeIds\":[\"jane@demo.com\"]},\"submittedShares\":[{\"nomineeId\":\"jane@demo.com\",\"shareHash\":\"a6436e9cda8dd440fc4c5587c8b22e82d6ef3a1e94c2a3c7d9e523fe3c01f15b\",\"submittedAt\":\"2026-11-20T14:46:37.397Z\",\"maskedIdentifier\":\"j***@demo.com\"}],\"certificateMetadata\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"stateOrMunicipality\":\"Gujarat e-Olakh\",\"verificationUrl\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\",\"isGovDomainValid\":true,\"rawQrPayload\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\"},\"gracePeriodSeconds\":10,\"initiatedAt\":\"2026-11-20T14:46:37.393Z\",\"updatedAt\":\"2026-11-20T14:46:47.672Z\",\"registryResult\":{\"status\":\"VERIFIED\",\"matchedRecord\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"status\":\"REGISTERED\",\"issuingAuthority\":\"Ahmedabad Municipal Corporation / Gujarat e-Olakh\",\"registrationDate\":\"2024-11-04\"},\"mismatches\":[],\"verifiedAt\":\"2026-11-20T14:46:37.400Z\",\"provider\":\"MockRegistryVerifier\",\"details\":\"Successfully cross-verified against Ahmedabad Municipal Corporation / Gujarat e-Olakh\"},\"disputeReason\":\"Objection raised pending manual legal review.\"}",
+      "status": "DISPUTED"
     }
   ],
-  "gate_claim_actions": [
-    {
-      "id": "8bc60034-2ae3-41a7-b424-95259c276dbe",
-      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
-      "asset_id": "e1dfabf5-6ad0-4e5e-9498-10e05a8ef1d4",
-      "action_type": "transfer",
-      "status": "completed",
-      "result_notes": "Asset \"Chase Checking Account\" processed via transfer action. Instructions: Transfer to nominee upon verified claim. Contact Chase estate services at 1-800-935-9935.",
-      "executed_at": "2026-11-20T13:27:39.398Z"
-    },
-    {
-      "id": "4699d979-a186-4334-8de5-04a978d379f6",
-      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
-      "asset_id": "9c265091-5444-4a8c-9cb4-101f9fa85b29",
-      "action_type": "recover",
-      "status": "completed",
-      "result_notes": "Asset \"Bitcoin Wallet\" processed via recover action. Instructions: Recovery phrase stored in LastPass vault. Nominee should contact Coinbase support with death certificate.",
-      "executed_at": "2026-11-20T13:27:39.399Z"
-    },
-    {
-      "id": "2bc778a1-b524-4707-b5f6-f3dce07e53b8",
-      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
-      "asset_id": "f028f333-911f-4e34-ad05-3887046306f3",
-      "action_type": "transfer",
-      "status": "completed",
-      "result_notes": "Asset \"Google Photos Primary Library & Cloud Archive\" processed via transfer action. Instructions: Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
-      "executed_at": "2026-11-20T13:27:39.400Z"
-    },
-    {
-      "id": "3c20ff44-97ea-4968-a495-dd69c5c72b63",
-      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
-      "asset_id": "5ec2e75e-9129-4f3b-b908-2fbf40ae14b0",
-      "action_type": "recover",
-      "status": "completed",
-      "result_notes": "Asset \"Google Pay (GPay UPI)\" processed via recover action. Instructions: Contact HDFC Bank estate nodal officer with death certificate and probate/succession certificate to claim balance.",
-      "executed_at": "2026-11-20T13:27:39.401Z"
-    }
-  ],
+  "gate_claim_actions": [],
   "audit_logs": [
     {
-      "id": "a266f125-6646-491e-8119-890b51cc0431",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "action": "SEED_DATA_CREATED",
-      "details": "{\"message\":\"Demo data seeded\"}",
-      "created_at": "2026-11-20T08:14:58.661Z"
+      "id": "0cf7d216-d2a9-4808-9063-03bfa86b3b05",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "GOOGLE_ACCOUNT_SCANNED",
+      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
+      "created_at": "2026-11-20T09:17:52.676Z"
     },
     {
-      "id": "5f234016-d9fb-42e5-bf0a-4006c0a00bf1",
+      "id": "1993afd5-a68a-4aa1-999c-d50abec4f50e",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "GOOGLE_ACCOUNT_SCANNED",
+      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
+      "created_at": "2026-11-20T09:16:44.898Z"
+    },
+    {
+      "id": "30142294-24da-4b1c-ad78-69564da6295a",
       "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
       "action": "USER_LOGIN",
       "details": "{\"email\":\"john@demo.com\"}",
-      "created_at": "2026-11-20T08:16:29.026Z"
+      "created_at": "2026-11-20T13:28:19.629Z"
+    },
+    {
+      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "action": "USER_LOGIN",
+      "created_at": "2026-11-20T14:46:32.297Z",
+      "details": "{\"email\":\"jane@demo.com\"}",
+      "id": "35303843-0be2-4ba4-a880-9c6f316a8d17"
+    },
+    {
+      "id": "36ff98cd-78d8-4678-ad4b-2d037f9e7936",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "GOOGLE_ACCOUNT_SCANNED",
+      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
+      "created_at": "2026-11-20T09:17:55.817Z"
     },
     {
       "id": "37645591-ed29-4191-bd12-b2a297412cae",
@@ -307,20 +291,6 @@
       "created_at": "2026-11-20T08:16:29.038Z"
     },
     {
-      "id": "819e8b2b-140f-4e5b-91c6-88080f6dc497",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "USER_REGISTERED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\"}",
-      "created_at": "2026-11-20T09:16:13.249Z"
-    },
-    {
-      "id": "1993afd5-a68a-4aa1-999c-d50abec4f50e",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T09:16:44.898Z"
-    },
-    {
       "id": "5b79f066-8cf0-46ee-ad4c-a2620de27cec",
       "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
       "action": "ASSETS_IMPORTED_FROM_GOOGLE",
@@ -328,46 +298,11 @@
       "created_at": "2026-11-20T09:17:03.576Z"
     },
     {
-      "id": "78e901eb-f7d4-48ce-83ed-71df76471845",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T09:17:50.045Z"
-    },
-    {
-      "id": "0cf7d216-d2a9-4808-9063-03bfa86b3b05",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T09:17:52.676Z"
-    },
-    {
-      "id": "e9def00a-a287-468f-ab55-f09c6a0c74d4",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T09:17:53.573Z"
-    },
-    {
-      "id": "36ff98cd-78d8-4678-ad4b-2d037f9e7936",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T09:17:55.817Z"
-    },
-    {
-      "id": "c6692238-cd5c-4d88-b2ba-3723e87e885b",
-      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
-      "action": "NOMINEE_ADDED",
-      "details": "{\"nominee_id\":\"583a9afe-8d58-48aa-ab36-fe6dd43e7f99\",\"name\":\"Nikhil\",\"email\":\"nikhilraval@gmail.com\"}",
-      "created_at": "2026-11-20T09:21:13.433Z"
-    },
-    {
-      "id": "9379c331-c138-4360-bbc5-45978416ab5f",
+      "id": "5f234016-d9fb-42e5-bf0a-4006c0a00bf1",
       "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
       "action": "USER_LOGIN",
       "details": "{\"email\":\"john@demo.com\"}",
-      "created_at": "2026-11-20T12:30:51.494Z"
+      "created_at": "2026-11-20T08:16:29.026Z"
     },
     {
       "id": "62f0125f-ef22-49ca-a1e1-26b6b27364ea",
@@ -377,39 +312,67 @@
       "created_at": "2026-11-20T12:31:31.443Z"
     },
     {
-      "id": "91f182a4-d3e6-42a2-8c0d-fb65c3091bad",
       "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "CLAIM_INITIATED",
-      "details": "{\"claim_id\":\"58072d18-4798-433d-a569-96008585047b\",\"deceased_email\":\"john@demo.com\",\"status\":\"HOLD_FOR_REVIEW\"}",
-      "created_at": "2026-11-20T12:32:53.007Z"
+      "action": "CLAIM_DISPUTED",
+      "created_at": "2026-11-20T14:46:47.674Z",
+      "details": "{\"claim_id\":\"fbeb5da9-c137-442c-814b-101634dd1db3\",\"reason\":\"Objection raised pending manual legal review.\"}",
+      "id": "6e99e59b-5011-431c-8c72-62fb3ced34d1"
     },
     {
-      "id": "d13e7347-061e-4d46-b8d1-e003d82f688b",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "id": "78e901eb-f7d4-48ce-83ed-71df76471845",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
       "action": "GOOGLE_ACCOUNT_SCANNED",
-      "details": "{\"email\":\"jane@demo.com\",\"totalDiscovered\":13}",
-      "created_at": "2026-11-20T12:39:05.092Z"
+      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
+      "created_at": "2026-11-20T09:17:50.045Z"
     },
     {
-      "id": "f6c229ca-2a3f-4da4-89ca-4b088b12e0ac",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "CLAIM_INITIATED",
-      "details": "{\"claim_id\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"deceased_email\":\"john@demo.com\",\"status\":\"GRACE_PERIOD_ACTIVE\"}",
-      "created_at": "2026-11-20T13:27:27.405Z"
+      "id": "819e8b2b-140f-4e5b-91c6-88080f6dc497",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "USER_REGISTERED",
+      "details": "{\"email\":\"2x3osjs@gmail.com\"}",
+      "created_at": "2026-11-20T09:16:13.249Z"
     },
     {
-      "id": "8da866c1-d694-46ab-b7c9-bb44e0ad3be2",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "CLAIM_EXECUTED",
-      "details": "{\"claim_id\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"assets_processed\":4,\"actor\":\"jane@demo.com\"}",
-      "created_at": "2026-11-20T13:27:39.402Z"
-    },
-    {
-      "id": "30142294-24da-4b1c-ad78-69564da6295a",
+      "id": "9379c331-c138-4360-bbc5-45978416ab5f",
       "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
       "action": "USER_LOGIN",
       "details": "{\"email\":\"john@demo.com\"}",
-      "created_at": "2026-11-20T13:28:19.629Z"
+      "created_at": "2026-11-20T12:30:51.494Z"
+    },
+    {
+      "id": "a266f125-6646-491e-8119-890b51cc0431",
+      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "action": "SEED_DATA_CREATED",
+      "details": "{\"message\":\"Demo data seeded\"}",
+      "created_at": "2026-11-20T08:14:58.661Z"
+    },
+    {
+      "id": "c6692238-cd5c-4d88-b2ba-3723e87e885b",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "NOMINEE_ADDED",
+      "details": "{\"nominee_id\":\"583a9afe-8d58-48aa-ab36-fe6dd43e7f99\",\"name\":\"Nikhil\",\"email\":\"nikhilraval@gmail.com\"}",
+      "created_at": "2026-11-20T09:21:13.433Z"
+    },
+    {
+      "id": "e9def00a-a287-468f-ab55-f09c6a0c74d4",
+      "user_id": "60b70590-df73-430b-95bb-46d54e1d69f8",
+      "action": "GOOGLE_ACCOUNT_SCANNED",
+      "details": "{\"email\":\"2x3osjs@gmail.com\",\"totalDiscovered\":13}",
+      "created_at": "2026-11-20T09:17:53.573Z"
+    },
+    {
+      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "action": "CLAIM_INITIATED",
+      "created_at": "2026-11-20T14:46:37.406Z",
+      "details": "{\"claim_id\":\"fbeb5da9-c137-442c-814b-101634dd1db3\",\"deceased_email\":\"john@demo.com\",\"status\":\"GRACE_PERIOD_ACTIVE\"}",
+      "id": "eccd2cc7-107d-4aeb-a925-1f8bf1b86b03"
+    },
+    {
+      "id": "62a91cce-899d-45e2-bc31-8644ecb11a65",
+      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "action": "USER_LOGIN",
+      "details": "{\"email\":\"jane@demo.com\"}",
+      "created_at": "2026-11-20T14:48:12.095Z"
     }
   ],
   "messages": []

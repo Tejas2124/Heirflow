@@ -3,7 +3,7 @@ node_modules/
 backend/node_modules/
 frontend/node_modules/
 backend/verification-gate/node_modules/
-
+backend/gcp-key.json
 # Environment variables & secrets
 .env
 .env.*
