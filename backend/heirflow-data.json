@@ -226,8 +226,57 @@
   ],
   "claims": [],
   "claim_actions": [],
-  "gate_claims": [],
-  "gate_claim_actions": [],
+  "gate_claims": [
+    {
+      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
+      "deceased_user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
+      "claimant_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "status": "EXECUTED",
+      "evidence_path": null,
+      "state_json": "{\"claimId\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"deceasedUserId\":\"27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988\",\"claimantId\":\"09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9\",\"status\":\"EXECUTED\",\"quorumConfig\":{\"requiredQuorum\":1,\"totalNominees\":1,\"nomineeIds\":[\"jane@demo.com\"]},\"submittedShares\":[{\"nomineeId\":\"jane@demo.com\",\"shareHash\":\"a6436e9cda8dd440fc4c5587c8b22e82d6ef3a1e94c2a3c7d9e523fe3c01f15b\",\"submittedAt\":\"2026-11-20T13:27:27.399Z\",\"maskedIdentifier\":\"j***@demo.com\"}],\"certificateMetadata\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"stateOrMunicipality\":\"Gujarat e-Olakh\",\"verificationUrl\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\",\"isGovDomainValid\":true,\"rawQrPayload\":\"https://eolakh.gujarat.gov.in/verify/GJ-AHM-2024-D-098234\"},\"gracePeriodSeconds\":10,\"initiatedAt\":\"2026-11-20T13:27:27.394Z\",\"updatedAt\":\"2026-11-20T13:27:39.396Z\",\"registryResult\":{\"status\":\"VERIFIED\",\"matchedRecord\":{\"registrationNumber\":\"GJ-AHM-2024-D-098234\",\"deceasedName\":\"John Doe\",\"dateOfDeath\":\"2024-11-01\",\"status\":\"REGISTERED\",\"issuingAuthority\":\"Ahmedabad Municipal Corporation / Gujarat e-Olakh\",\"registrationDate\":\"2024-11-04\"},\"mismatches\":[],\"verifiedAt\":\"2026-11-20T13:27:27.401Z\",\"provider\":\"MockRegistryVerifier\",\"details\":\"Successfully cross-verified against Ahmedabad Municipal Corporation / Gujarat e-Olakh\"},\"graceEndsAt\":\"2026-11-20T13:27:37.402Z\",\"executedAt\":\"2026-11-20T13:27:39.396Z\"}",
+      "grace_ends_at": "2026-11-20T13:27:37.402Z",
+      "initiated_at": "2026-11-20T13:27:27.394Z",
+      "updated_at": "2026-11-20T13:27:39.396Z"
+    }
+  ],
+  "gate_claim_actions": [
+    {
+      "id": "8bc60034-2ae3-41a7-b424-95259c276dbe",
+      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
+      "asset_id": "e1dfabf5-6ad0-4e5e-9498-10e05a8ef1d4",
+      "action_type": "transfer",
+      "status": "completed",
+      "result_notes": "Asset \"Chase Checking Account\" processed via transfer action. Instructions: Transfer to nominee upon verified claim. Contact Chase estate services at 1-800-935-9935.",
+      "executed_at": "2026-11-20T13:27:39.398Z"
+    },
+    {
+      "id": "4699d979-a186-4334-8de5-04a978d379f6",
+      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
+      "asset_id": "9c265091-5444-4a8c-9cb4-101f9fa85b29",
+      "action_type": "recover",
+      "status": "completed",
+      "result_notes": "Asset \"Bitcoin Wallet\" processed via recover action. Instructions: Recovery phrase stored in LastPass vault. Nominee should contact Coinbase support with death certificate.",
+      "executed_at": "2026-11-20T13:27:39.399Z"
+    },
+    {
+      "id": "2bc778a1-b524-4707-b5f6-f3dce07e53b8",
+      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
+      "asset_id": "f028f333-911f-4e34-ad05-3887046306f3",
+      "action_type": "transfer",
+      "status": "completed",
+      "result_notes": "Asset \"Google Photos Primary Library & Cloud Archive\" processed via transfer action. Instructions: Contains 10+ years of unbacked personal and family photos. Nominee should request Google Takeout or account manager transfer.",
+      "executed_at": "2026-11-20T13:27:39.400Z"
+    },
+    {
+      "id": "3c20ff44-97ea-4968-a495-dd69c5c72b63",
+      "claim_id": "482a5606-252d-41e3-a5c4-2537e6ab3557",
+      "asset_id": "5ec2e75e-9129-4f3b-b908-2fbf40ae14b0",
+      "action_type": "recover",
+      "status": "completed",
+      "result_notes": "Asset \"Google Pay (GPay UPI)\" processed via recover action. Instructions: Contact HDFC Bank estate nodal officer with death certificate and probate/succession certificate to claim balance.",
+      "executed_at": "2026-11-20T13:27:39.401Z"
+    }
+  ],
   "audit_logs": [
     {
       "id": "a266f125-6646-491e-8119-890b51cc0431",
@@ -342,46 +391,25 @@
       "created_at": "2026-11-20T12:39:05.092Z"
     },
     {
+      "id": "f6c229ca-2a3f-4da4-89ca-4b088b12e0ac",
+      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "action": "CLAIM_INITIATED",
+      "details": "{\"claim_id\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"deceased_email\":\"john@demo.com\",\"status\":\"GRACE_PERIOD_ACTIVE\"}",
+      "created_at": "2026-11-20T13:27:27.405Z"
+    },
+    {
+      "id": "8da866c1-d694-46ab-b7c9-bb44e0ad3be2",
+      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
+      "action": "CLAIM_EXECUTED",
+      "details": "{\"claim_id\":\"482a5606-252d-41e3-a5c4-2537e6ab3557\",\"assets_processed\":4,\"actor\":\"jane@demo.com\"}",
+      "created_at": "2026-11-20T13:27:39.402Z"
+    },
+    {
       "id": "30142294-24da-4b1c-ad78-69564da6295a",
       "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
       "action": "USER_LOGIN",
       "details": "{\"email\":\"john@demo.com\"}",
       "created_at": "2026-11-20T13:28:19.629Z"
-    },
-    {
-      "id": "4c81b4a4-566f-42fa-83c7-6794df6de80d",
-      "user_id": "27cbb36d-fd3b-4298-9ad1-a2a7ae4b0988",
-      "action": "USER_LOGIN",
-      "details": "{\"email\":\"john@demo.com\"}",
-      "created_at": "2026-11-20T14:33:42.682Z"
-    },
-    {
-      "id": "2c8b7226-371d-46ea-bb59-824eb0a6af1f",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "USER_LOGIN",
-      "details": "{\"email\":\"jane@demo.com\"}",
-      "created_at": "2026-11-20T14:35:27.653Z"
-    },
-    {
-      "id": "8437808e-d01c-4d4f-b623-53ab881446c6",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "USER_LOGIN",
-      "details": "{\"email\":\"jane@demo.com\"}",
-      "created_at": "2026-11-20T15:35:49.425Z"
-    },
-    {
-      "id": "32e85c66-0344-4185-b250-ffdf2bd7e01b",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "USER_LOGIN",
-      "details": "{\"email\":\"jane@demo.com\"}",
-      "created_at": "2026-11-20T15:36:19.734Z"
-    },
-    {
-      "id": "48ca6afc-f056-4bd8-9080-559d32cb813e",
-      "user_id": "09b47bf7-3c5a-4eab-ba7c-24fd9545b9d9",
-      "action": "USER_LOGIN",
-      "details": "{\"email\":\"jane@demo.com\"}",
-      "created_at": "2026-11-20T15:37:06.378Z"
     }
   ],
   "messages": []

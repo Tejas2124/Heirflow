@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const app = express();
 // Google Cloud Run automatically sets PORT (defaults to 8080 in cloud, 3001 in local development)
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3001;
 
 // Middleware
 app.use(cors({ origin: '*' }));
